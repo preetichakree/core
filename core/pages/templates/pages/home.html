@@ -1,0 +1,28 @@
+
+
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<h1>Software Developer</h1>
+<div class="row">
+    <div class="col-md-8">
+        {% if project.image %}
+            <img src="C:\Users\admin\Downloads\preeti.jfif" width="100%">
+        {% endif %}
+    </div>
+    <div class="col-md-4">
+        <h5>About Me:</h5>
+       <p> Hello,
+        I'm Preeti Chakre
+        A recent graduate with a degree in computer engineering. I'm a keen learner to explore new technologies and gain knowledge.
+        I had worked on a variety of projects where I learnt Python ,Java ,C++.
+        I have a great interest to join a collaborative team where I can continue to learn and work towards mutual growth as a Data scientist/Machine learning Engineer .</p>
+
+        <b>Thankyou for being here!!! Hoping to connect with you.</b>
+        <br>
+        <h5>Langu used:</h5>
+        <p>{{ project.technology }}</p>
+    </div>
+</div>
+{% endblock page_content %}
